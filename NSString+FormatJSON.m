@@ -93,7 +93,7 @@
         }
     }
     
-    return [[NSString alloc] initWithData:buf encoding:NSUTF8StringEncoding];
+    return [[[NSString alloc] initWithData:buf encoding:NSUTF8StringEncoding] autorelease];
 }
 
 @end
